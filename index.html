@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baian Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Category</h2>
+            <ul>
+                <li>General</li>
+                <li>Sales</li>
+                <li class="active">Negotiation</li>
+                <li>Marketing</li>
+            </ul>
+            <h2>Recent Chats</h2>
+            <ul>
+                <li>How can I increase the number of leads?</li>
+                <li>What’s the best approach for sales pitch?</li>
+            </ul>
+            <div class="user-profile">
+                <button>User Profile</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>How can we <span class="highlight">assist</span> you today?</h1>
+                <p>Get expert guidance powered by AI Agents specializing in Sales, Marketing, and Negotiation.</p>
+            </header>
+
+            <div class="categories">
+                <div class="card">
+                    <h3>Sales Strategies</h3>
+                    <p>Get tailored advice on increasing property visibility and driving sales.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <h3>Negotiation Tactics</h3>
+                    <p>Learn expert negotiation tips to close deals effectively.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <h3>Marketing Insights</h3>
+                    <p>Discover the best marketing strategies to showcase your properties.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="card">
+                    <h3>General Support</h3>
+                    <p>Need help with something else? Ask away, and we’ll guide you.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+
+            <div class="chatbox">
+                <input type="text" placeholder="Type your prompt here..." id="userInput">
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
