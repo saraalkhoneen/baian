@@ -1,68 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baian Chatbot</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baian Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Sidebar -->
-        <div class="sidebar">
-            <h2>Category</h2>
-            <ul>
-                <li>General</li>
-                <li>Sales</li>
-                <li class="active">Negotiation</li>
-                <li>Marketing</li>
-            </ul>
-            <h2>Recent Chats</h2>
-            <ul>
-                <li>How can I increase the number of leads?</li>
-                <li>What’s the best approach for sales pitch?</li>
-            </ul>
-            <div class="user-profile">
-                <button>User Profile</button>
-            </div>
-        </div>
-
-        <!-- Main Content -->
-        <div class="main-content">
-            <header>
-                <h1>How can we <span class="highlight">assist</span> you today?</h1>
-                <p>Get expert guidance powered by AI Agents specializing in Sales, Marketing, and Negotiation.</p>
-            </header>
-
-            <div class="categories">
-                <div class="card">
-                    <h3>Sales Strategies</h3>
-                    <p>Get tailored advice on increasing property visibility and driving sales.</p>
-                    <button>Learn More</button>
-                </div>
-                <div class="card">
-                    <h3>Negotiation Tactics</h3>
-                    <p>Learn expert negotiation tips to close deals effectively.</p>
-                    <button>Learn More</button>
-                </div>
-                <div class="card">
-                    <h3>Marketing Insights</h3>
-                    <p>Discover the best marketing strategies to showcase your properties.</p>
-                    <button>Learn More</button>
-                </div>
-                <div class="card">
-                    <h3>General Support</h3>
-                    <p>Need help with something else? Ask away, and we’ll guide you.</p>
-                    <button>Learn More</button>
-                </div>
-            </div>
-
-            <div class="chatbox">
-                <input type="text" placeholder="Type your prompt here..." id="userInput">
-                <button id="sendBtn">Send</button>
-            </div>
-        </div>
-    </div>
-    <script src="script.js"></script>
+  <div class="container">
+    <aside class="sidebar">
+      <div class="logo">
+        <h2>Baian</h2>
+      </div>
+      <button class="new-chat">Begin a New Chat +</button>
+      <div class="search">
+        <input type="text" placeholder="Search">
+      </div>
+      <div class="recent-chats">
+        <h3>Recent Chats</h3>
+        <ul>
+          <li>How can I increase the number of ...</li>
+          <li>What's the best approach to...</li>
+          <li>What's the best approach for...</li>
+        </ul>
+      </div>
+      <div class="user-profile">
+        <button>User Profile</button>
+      </div>
+    </aside>
+    <main class="main-content">
+      <div class="center-content">
+        <h1>How can we <span class="highlight">assist</span> you today?</h1>
+        <h2>كيف اقدر اخدمك اليوم؟</h2>
+        <p>
+          Get expert guidance powered by AI agents specializing in Sales, Marketing, and Negotiation. 
+          Choose the agent that suits your needs and start your conversation with ease.
+        </p>
+      </div>
+      <div class="prompts">
+        <div class="prompt-card">How did shareholder equity change over the last year?</div>
+        <div class="prompt-card">How does the company manage credit risk in financial reporting?</div>
+        <div class="prompt-card">What activities does the subsidiary focused on medical solutions perform?</div>
+        <div class="prompt-card">What is the status of the company's cash flows from operations?</div>
+      </div>
+      <div class="chat-bar">
+        <textarea placeholder="Type your prompt here..."></textarea>
+        <button class="send-btn">➤</button>
+      </div>
+    </main>
+  </div>
 </body>
 </html>
